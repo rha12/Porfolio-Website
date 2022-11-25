@@ -1,0 +1,82 @@
+/* reset */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/***************** utility components *****************/
+
+:root{
+    font-size:62.5%;
+
+    /******* Custom Properties ********/
+
+    /* primary color */
+    --primary-color: #014d4e ;
+
+    /* secondary color */
+    --secondary-color: #ff9408;
+
+    /* secondary color modified */
+    --secondary-color-m: #ff94088e;
+
+    /* tertiary color */
+    --tertiary-color: #017374;
+
+    /* tertiary color modified */
+    --tertiary-color-m: #01737498;
+}
+
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+    line-height: 1.8;
+    display: flex;
+}
+
+/* main styling */
+
+/************************************** side-nav ****************************************/
+
+aside#side-nav{
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+
+}
+div.side-nav__content{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+div.side-nav__content--logo> img{
+    width:calc(3vh + 3vw);
+    position: cover;
+}
+
+ul.side-nav__content--social{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+ul.side-nav__content--social a i{
+    /* 20px => 2rem => {1 rem + [(10/1500)*100]} =>dynamic value */
+    font-size: calc(1rem + 0.66667vw);
+    color: #ffffff;
+    margin-bottom: calc(2rem + 0.66667vw);
+    transition: color 0.2s ease-in-out;
+}
+
+ul.side-nav__content--social a i:hover,
+ul.side-nav__content--social a i:active{
+    color:var(--secondary-color)
+}
+
