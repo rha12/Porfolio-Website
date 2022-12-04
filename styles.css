@@ -275,9 +275,93 @@ section#work{
     filter:sepia(80%);    
 }
 
+/************************************** about me section****************************************/
+section#about-me{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
 
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.about-me__img,
+.about-me__content{
+    flex-basis: 40rem;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.about-me__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me__content--title{
+    font-size: 4rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+}
+
+.about-me__content--title:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    height: .3rem;
+    background-color: var(--primary-color);
+  
+}
+
+.about-me__content--title,
+.about-me__content--para{
+    margin-bottom: 4rem;
+    letter-spacing: 0.2rem;
+}
+
+.about-me__content--para{
+    font-family: 'Indie Flower',cursive;
+    font-size: 1.8rem;
+}
+
+.about-me__content--link:link,
+.about-me__content--link:visited{
+    font-size: 1.5rem ;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.about-me__content--link:link::before,
+.about-me__content--link:visited::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.about-me__content--link:hover:before,
+.about-me__content--link:active:before{
+    transform: scaleY(1);
+    transform-origin: top;
     
-
+}
 
 /***************** max-width:900px ******************/
 @media screen and (max-width:900px){
@@ -302,6 +386,7 @@ section#work{
         position:fixed;
         top: 0;
         right:-30rem;
+        z-index: 2;
     }
 
     .clicked{
@@ -311,6 +396,7 @@ section#work{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+       
     }
 
     ul.header__main-nav--links>li{
