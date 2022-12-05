@@ -290,6 +290,7 @@ section#about-me{
 .about-me__content{
     flex-basis: 40rem;
     flex-grow: 1;
+    flex-shrink: 1;
     padding: 2rem;
 }
 
@@ -362,6 +363,72 @@ section#about-me{
     transform-origin: top;
     
 }
+
+/************************************** services section ****************************************/
+section#services{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6rem 2rem 2rem;
+    background-color: var(--primary-color);
+}
+
+div.service{
+    position: relative;
+    padding: 4rem;
+    margin: 0 2rem 4rem;
+    flex-grow: 1;
+    flex-basis: 40rem;
+    border-left: 0.2rem solid var(--secondary-color);
+    border-right: 0.2rem solid var(--secondary-color);
+    border-bottom: 0.2rem solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    z-index: 1;
+
+}
+
+div.service::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    z-index: -1;
+    transition: transform 0.45s cubic-bezier(1, 0, 0, 1);
+}
+
+div.service:hover::before,
+div.service:active::before{
+    transform: scaleX(1);
+ 
+}
+
+div.service i,
+div.service .services--title{
+    margin-bottom:2rem;  
+    font-size: 3rem;
+}
+
+div.service i{
+    color: #ffffff;
+}
+
+.services--title{
+    text-transform: uppercase;
+}
+
+.services--para{
+    font-family: 'Indie Flower',cursive;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
 
 /***************** max-width:900px ******************/
 @media screen and (max-width:900px){
@@ -471,6 +538,24 @@ section#about-me{
     section#showcase{
         background-position:80%;
         align-items: flex-end;
+    }
+
+    /************************************** services****************************************/
+    section#service{
+        padding:6rem 3rem 2rem
+    }
+    
+    .service{
+        padding: calc(1rem + 2vw);
+        margin:0 0 calc(1rem +2vw)
+    }
+
+    .services--title{
+        font-size: calc(1.2rem +2vw)
+    }
+
+    .services--para{
+        font-size: calc(0.8rem + 1.5vw);
     }
 
 }
