@@ -294,7 +294,7 @@ section#about-me{
     padding: 2rem;
 }
 
-.about-me__img{
+.about-me__img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
