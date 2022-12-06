@@ -476,10 +476,112 @@ section#skills{
     display: inline-block;
     vertical-align: middle ;
     height: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem 0 0 1rem;
     background-color: var(--secondary-color);
 }
 
+.skills__design--progress-1{
+    animation: design-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:80%;
+    }
+}
+
+.skills__design--progress-2{
+    animation: design-2 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:75%;
+    }
+}
+
+.skills__design--progress-3{
+    animation: design-3 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:95%;
+    }
+}
+
+.skills__design--progress-4{
+    animation: design-4 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-4{
+    0%{
+        width:0;
+    }
+    100%{
+        width:65%;
+    }
+}
+
+.skills__coding--progress-1{
+    animation: coding-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-1{
+    0%{
+        width:0;
+    }
+    100%{
+        width:95%;
+    }
+}
+.skills__coding--progress-2{
+    animation: coding-2 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:80%;
+    }
+}
+
+.skills__coding--progress-3{
+    animation: coding-3 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:65%;
+    }
+}
+
+.skills__coding--progress-4{
+    animation: coding-4 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:90%;
+    }
+}
 
 /***************** max-width:900px ******************/
 @media screen and (max-width:900px){
@@ -592,6 +694,7 @@ section#skills{
     }
 
     /************************************** services****************************************/
+    /**************************************skills****************************************/
     section#service{
         padding:6rem 3rem 2rem
     }
@@ -601,14 +704,20 @@ section#skills{
         margin:0 0 calc(1rem +2vw)
     }
 
-    .services--title{
-        font-size: calc(1.2rem +2vw)
+    div.service .services--title,
+    .skills__design--title,
+    .skills__coding--title{
+        font-size: calc(1.2rem + 2vw)
     }
 
-    .services--para{
+    .services--para,
+    .skills__design h4,
+    .skills__coding h4{
         font-size: calc(0.8rem + 1.5vw);
     }
 
+    
+    
 }
 
 
