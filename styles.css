@@ -713,9 +713,6 @@ section#contact{
 @media screen and (max-width:610px){
 
     /************************************** main-nav--hamburger ****************************************/
-    /* header#header{
-        position: absolute;
-    } */
 
     nav#header__main-nav{
         height:100vh;
@@ -812,6 +809,7 @@ section#contact{
 
     /************************************** services****************************************/
     /**************************************skills****************************************/
+     /**************************************testimonials****************************************/
     section#service{
         padding:6rem 3rem 2rem
     }
@@ -833,6 +831,10 @@ section#contact{
     .skills__coding h4,
     .testimonials__card--content-para{
         font-size: calc(0.8rem + 1.5vw);
+    }
+
+    .testimonials__card--content{
+        top:47%;
     }
 
     
