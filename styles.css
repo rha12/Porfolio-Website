@@ -651,7 +651,45 @@ section#testimonials{
     filter:grayscale(0.5)
 } 
 
+/************************************** contacts section ****************************************/
+section#contact{
+    height: 100vh;
+    background-image: url(./images/full-bg-03.jpg);
+  
 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contact__form{
+    flex-basis: 40rem;
+    display: flex;
+    flex-direction: column;
+   background-color: var(--tertiary-color-m);
+}
+
+.contact__form input,
+.contact__form textarea{
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Indie Flower',cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding:2rem;
+    font-weight: 300;
+    border: none;
+    border-bottom: 0.1rem solid var(--secondary-color);
+}
+
+.contact__form textarea{
+    height: 30vh;
+}
+
+.contact__form input[type="submit"]{
+    cursor: pointer;
+    border: none;
+}
 
 
 
@@ -662,6 +700,7 @@ section#testimonials{
         margin: 0 auto;
     }
 }
+
 /***************** max-width:900px ******************/
 @media screen and (max-width:900px){
     section#showcase{
@@ -671,7 +710,6 @@ section#testimonials{
 }
 
 /***************** max-width:610px *****************/
-
 @media screen and (max-width:610px){
 
     /************************************** main-nav--hamburger ****************************************/
@@ -819,6 +857,11 @@ section#testimonials{
 .testimonials__card:active .testimonials__card--content{
     transform-origin: top;
 }
+
+ /************************************** contact section ****************************************/
+ section#contact{
+    background-position: 15% 5%;
+ }
 }
 
 
