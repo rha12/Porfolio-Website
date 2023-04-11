@@ -4,5 +4,13 @@ A single page portfolio website made using HTML5, CSS and JavaScript. This websi
 
 # Screenshots
 ![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/Intro.png "output")
+![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/About me.png "output")
+![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/cardspng.png "output")
+![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/Projects.png "output")
+![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/skills.png "output")
+![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/Remarks.png "output")
+![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/query.png "output")
+
+
 
 
