@@ -18,6 +18,11 @@ A single page portfolio website made using HTML5, CSS and JavaScript. This websi
 
 ![alt text](https://github.com/rha12/Porfolio-Website/blob/master/screenshots/query.png "output")
 
+# Technologies
+
+* HTML5
+* CSS
+* JavaScript
 
 
 
